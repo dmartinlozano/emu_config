@@ -1,0 +1,11 @@
+{
+    "accept": "Aceptar",
+    "cancel": "Cancelar",
+    "gamepad.title": "Mapea tus mandos",
+    "gamepad.gamepad": "Mando",
+    "gamepad.switch_ab_button": "Cambiar botones A/B de posicion",
+    "gamepad.switch_ps_button": "Cambiar botones por PS",
+    "gamepad_dialog.title": "Vincula tu mando",
+    "gamepad_dialog.subtitle": "Presiona un botón o mueve un stick para vincularlo a ",
+    "gamepad_dialog.unassign": "Desasignar"
+}

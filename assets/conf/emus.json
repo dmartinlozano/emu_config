@@ -1,0 +1,458 @@
+[
+    {
+        "id": 1,
+        "name": "Retro Arch",
+        "package": "com.retroarch.aarch64",
+        "source": "https://play.google.com/store/apps/details?id=com.retroarch",
+        "numMaxPlayers": 4,
+        "input": {
+            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+            "mapper": {
+                "input_player%NUM_PLAYER%_a": "nul",
+                "input_player%NUM_PLAYER%_a_axis": "nul",
+                "input_player%NUM_PLAYER%_a_btn": "96",
+                "input_player%NUM_PLAYER%_a_mbtn": "nul",
+                "input_player%NUM_PLAYER%_analog_dpad_mode": "4",
+                "input_player%NUM_PLAYER%_b": "nul",
+                "input_player%NUM_PLAYER%_b_axis": "nul",
+                "input_player%NUM_PLAYER%_b_btn": "97",
+                "input_player%NUM_PLAYER%_b_mbtn": "nul",
+                "input_player%NUM_PLAYER%_device_reservation_type": "0",
+                "input_player%NUM_PLAYER%_down": "down",
+                "input_player%NUM_PLAYER%_down_axis": "nul",
+                "input_player%NUM_PLAYER%_down_btn": "h0down",
+                "input_player%NUM_PLAYER%_down_mbtn": "nul",
+                "input_player%NUM_PLAYER%_joypad_index": "0",
+                "input_player%NUM_PLAYER%_l": "nul",
+                "input_player%NUM_PLAYER%_l2": "nul",
+                "input_player%NUM_PLAYER%_l2_axis": "nul",
+                "input_player%NUM_PLAYER%_l2_btn": "104",
+                "input_player%NUM_PLAYER%_l2_mbtn": "nul",
+                "input_player%NUM_PLAYER%_l3": "nul",
+                "input_player%NUM_PLAYER%_l3_axis": "nul",
+                "input_player%NUM_PLAYER%_l3_btn": "106",
+                "input_player%NUM_PLAYER%_l3_mbtn": "nul",
+                "input_player%NUM_PLAYER%_l_axis": "nul",
+                "input_player%NUM_PLAYER%_l_btn": "102",
+                "input_player%NUM_PLAYER%_l_mbtn": "nul",
+                "input_player%NUM_PLAYER%_l_x_minus": "nul",
+                "input_player%NUM_PLAYER%_l_x_minus_axis": "-0",
+                "input_player%NUM_PLAYER%_l_x_minus_btn": "nul",
+                "input_player%NUM_PLAYER%_l_x_minus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_l_x_plus": "nul",
+                "input_player%NUM_PLAYER%_l_x_plus_axis": "+0",
+                "input_player%NUM_PLAYER%_l_x_plus_btn": "nul",
+                "input_player%NUM_PLAYER%_l_x_plus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_l_y_minus": "nul",
+                "input_player%NUM_PLAYER%_l_y_minus_axis": "-1",
+                "input_player%NUM_PLAYER%_l_y_minus_btn": "nul",
+                "input_player%NUM_PLAYER%_l_y_minus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_l_y_plus": "nul",
+                "input_player%NUM_PLAYER%_l_y_plus_axis": "+1",
+                "input_player%NUM_PLAYER%_l_y_plus_btn": "nul",
+                "input_player%NUM_PLAYER%_l_y_plus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_left": "left",
+                "input_player%NUM_PLAYER%_left_axis": "nul",
+                "input_player%NUM_PLAYER%_left_btn": "h0left",
+                "input_player%NUM_PLAYER%_left_mbtn": "nul",
+                "input_player%NUM_PLAYER%_mouse_index": "0",
+                "input_player%NUM_PLAYER%_r": "nul",
+                "input_player%NUM_PLAYER%_r2": "nul",
+                "input_player%NUM_PLAYER%_r2_axis": "nul",
+                "input_player%NUM_PLAYER%_r2_btn": "105",
+                "input_player%NUM_PLAYER%_r2_mbtn": "nul",
+                "input_player%NUM_PLAYER%_r3": "nul",
+                "input_player%NUM_PLAYER%_r3_axis": "nul",
+                "input_player%NUM_PLAYER%_r3_btn": "107",
+                "input_player%NUM_PLAYER%_r3_mbtn": "nul",
+                "input_player%NUM_PLAYER%_r_axis": "nul",
+                "input_player%NUM_PLAYER%_r_btn": "103",
+                "input_player%NUM_PLAYER%_r_mbtn": "nul",
+                "input_player%NUM_PLAYER%_r_x_minus": "nul",
+                "input_player%NUM_PLAYER%_r_x_minus_axis": "-2",
+                "input_player%NUM_PLAYER%_r_x_minus_btn": "nul",
+                "input_player%NUM_PLAYER%_r_x_minus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_r_x_plus": "nul",
+                "input_player%NUM_PLAYER%_r_x_plus_axis": "+2",
+                "input_player%NUM_PLAYER%_r_x_plus_btn": "nul",
+                "input_player%NUM_PLAYER%_r_x_plus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_r_y_minus": "nul",
+                "input_player%NUM_PLAYER%_r_y_minus_axis": "-3",
+                "input_player%NUM_PLAYER%_r_y_minus_btn": "nul",
+                "input_player%NUM_PLAYER%_r_y_minus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_r_y_plus": "nul",
+                "input_player%NUM_PLAYER%_r_y_plus_axis": "+3",
+                "input_player%NUM_PLAYER%_r_y_plus_btn": "nul",
+                "input_player%NUM_PLAYER%_r_y_plus_mbtn": "nul",
+                "input_player%NUM_PLAYER%_reserved_device": "",
+                "input_player%NUM_PLAYER%_right": "right",
+                "input_player%NUM_PLAYER%_right_axis": "nul",
+                "input_player%NUM_PLAYER%_right_btn": "h0right",
+                "input_player%NUM_PLAYER%_right_mbtn": "nul",
+                "input_player%NUM_PLAYER%_select": "rshift",
+                "input_player%NUM_PLAYER%_select_axis": "nul",
+                "input_player%NUM_PLAYER%_select_btn": "109",
+                "input_player%NUM_PLAYER%_select_mbtn": "nul",
+                "input_player%NUM_PLAYER%_start": "enter",
+                "input_player%NUM_PLAYER%_start_axis": "nul",
+                "input_player%NUM_PLAYER%_start_btn": "108",
+                "input_player%NUM_PLAYER%_start_mbtn": "nul",
+                "input_player%NUM_PLAYER%_up": "up",
+                "input_player%NUM_PLAYER%_up_axis": "nul",
+                "input_player%NUM_PLAYER%_up_btn": "h0up",
+                "input_player%NUM_PLAYER%_up_mbtn": "nul",
+                "input_player%NUM_PLAYER%_x": "nul",
+                "input_player%NUM_PLAYER%_x_axis": "nul",
+                "input_player%NUM_PLAYER%_x_btn": "99",
+                "input_player%NUM_PLAYER%_x_mbtn": "nul",
+                "input_player%NUM_PLAYER%_y": "nul",
+                "input_player%NUM_PLAYER%_y_axis": "nul",
+                "input_player%NUM_PLAYER%_y_btn": "100",
+                "input_player%NUM_PLAYER%_y_mbtn": "nul",
+                "input_enable_hotkey": "nul",
+                "input_enable_hotkey_axis": "nul",
+                "input_enable_hotkey_btn": "4",
+                "input_enable_hotkey_mbtn": "nul",
+                "input_exit_emulator": "nul",
+                "input_exit_emulator_axis": "nul",
+                "input_exit_emulator_btn": "h0left",
+                "input_exit_emulator_mbtn": "nul",
+                "input_menu_toggle_axis": "nul",
+                "input_menu_toggle_btn": "h0up",
+                "input_menu_toggle_gamepad_combo": "0",
+                "input_menu_toggle_mbtn": "nul",
+                "input_load_state": "nul",
+                "input_load_state_axis": "nul",
+                "input_load_state_btn": "h0down",
+                "input_load_state_mbtn": "nul",
+                "input_save_state": "nul",
+                "input_save_state_axis": "nul",
+                "input_save_state_btn": "h0right",
+                "input_save_state_mbtn": "nul",
+                "menu_unified_controls": "true",
+                "menu_swap_ok_cancel_buttons": "false"
+            },
+            "controllerStyleXbox":{
+                "input_player%NUM_PLAYER%_a_btn": "97",
+                "input_player%NUM_PLAYER%_b_btn": "96",
+                "menu_unified_controls": "true",
+                "menu_swap_ok_cancel_buttons": "true"
+            }
+        },
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+            "key": "video_driver",
+            "options": {
+                "opengl": "gl",
+                "xvideo": "xvideo",
+                "sdl": "sdl",
+                "sdl2": "sdl2",
+                "d3d": "d3d",
+                "vulkan": "vulkan"
+            }
+        },
+        "videoScale":{
+            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+            "key": "aspect_ratio_index",
+            "options": {
+                "default": "18",
+                "full": "22"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "PPSSPP",
+        "platform": "PSP",
+        "package": "org.ppsspp.ppsspp",
+        "source": "https://play.google.com/store/search?q=ppsspp",
+        "numMaxPlayers": 1,
+        "input": {
+            "file": "/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/controls.ini",
+            "mapper": {
+                "Up": "10-4033,10-19",
+                "Down": "10-4032,10-20",
+                "Left": "10-4031,10-21",
+                "Right": "10-4030,10-22",
+                "Circle": "10-96",
+                "Cross": "10-97",
+                "Square": "10-100",
+                "Triangle": "10-99",
+                "Start": "10-108",
+                "Select": "10-109",
+                "L": "10-104,10-102",
+                "R": "10-103,10-105",
+                "An.Up": "10-4003",
+                "An.Down": "10-4002",
+                "An.Left": "10-4001",
+                "An.Right": "10-4000"
+            },
+            "controllerStyleXbox":{
+                "Circle": "10-97",
+                "Cross": "10-96"
+            }
+        },
+        "romsPath":{
+            "file":"/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
+            "key": "CurrentDirectory"
+        },
+        "videoDriver":{
+            "file":"/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
+            "key": "video_driver",
+            "options": {
+                "vulkan": "3 (VULKAN)", 
+                "opengl": "0 (OPENGL)"
+            }
+        },
+        "hiddeOverlay":{
+            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+            "key": "ShowTouchControls",
+            "options": {
+                "false": "True",
+                "true": "False"
+            }
+        }
+        
+    },
+    {   
+        "id": 3,
+        "name": "Dolphin",
+        "platform": "GameCube",
+        "package": "org.dolphinemu.dolphinemu",
+        "source": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
+        "numMaxPlayers": 4,
+        "input":{
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/GCPadNew.ini",
+            "gamePadSections": ["GCPad1", "GCPad2", "GCPad3", "GCPad4"],
+            "mapper":{
+                "Buttons/A": "`Button A`",
+                "Buttons/B": "`Button B`",
+                "Buttons/X": "`Button X`",
+                "Buttons/Y": "`Button Y`",
+                "Buttons/Z": "`Button R1`",
+                "Buttons/Start": "Start",
+                "Main Stick/Up": "`Axis 1-`",
+                "Main Stick/Down": "`Axis 1+`",
+                "Main Stick/Left": "`Axis 0-`",
+                "Main Stick/Right": "`Axis 0+`",
+                "Main Stick/Modifier": "`Button L3`",
+                "C-Stick/Up": "`Axis 14-`",
+                "C-Stick/Down": "`Axis 14+`",
+                "C-Stick/Left": "`Axis 11-`",
+                "C-Stick/Right": "`Axis 11+`",
+                "C-Stick/Modifier": "`Button R3`",
+                "Triggers/L": "`Axis 23+`",
+                "Triggers/R": "`Axis 22+`",
+                "D-Pad/Up": "`Axis 16-`",
+                "D-Pad/Down": "`Axis 16+`",
+                "D-Pad/Left": "`Axis 15-`",
+                "D-Pad/Right": "`Axis 15+`"
+            },
+            "controllerStyleXbox":{
+                "Buttons/A": "`Button B`",
+                "Buttons/B": "`Button A`"
+            }
+        },
+        "romsPath":{
+            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "ISOPath0"
+        },
+        "region": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "FallbackRegion",
+            "options":{
+                "NTSC-J": "0",
+                "NTSC-U": "1",
+                "PAL": "2",
+                "NTSC-K": "3"
+            }
+        },
+        "enableSaveStates": {
+            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "EnableSaveStates",
+            "options": {
+                "true": "True",
+                "false": "False"
+            }
+        },
+        "videoDriver":{
+            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "GFXBackend",
+            "options": {
+                "opengl": "OGL",
+                "vulkan": "Vulkan",
+                "software": "Software Renderer"
+            }
+        }
+    },
+    {   
+        "id": 4,
+        "name": "Dolphin",
+        "platform": "Wii",
+        "package": "org.dolphinemu.dolphinemu",
+        "source": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
+        "numMaxPlayers": 4,
+        "input":{
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/WiimoteNew.ini",
+            "gamePadSections": ["Wiimote1", "Wiimote2", "Wiimote3", "Wiimote4"],
+            "mapper": {
+                "Buttons/A": "`Button A`",
+                "Buttons/B": "`Button X`",
+                "Buttons/-": "Select",
+                "Buttons/+": "Start",
+                "D-Pad/Up": "`Axis 16-`|`Axis 1-`",
+                "D-Pad/Down": "`Axis 16+`|`Axis 1+`",
+                "D-Pad/Left": "`Axis 15-`|`Axis 0-`",
+                "D-Pad/Right": "`Axis 15+`|`Axis 0+`",
+                "Nunchuk/Buttons/C": "`Button L1`",
+                "Nunchuk/Buttons/Z": "`Button R1`",
+                "Nunchuk/Stick/Up": "`Axis 1-`",
+                "Nunchuk/Stick/Down": "`Axis 1+`",
+                "Nunchuk/Stick/Left": "`Axis 0-`",
+                "Nunchuk/Stick/Right": "`Axis 0+`",
+                "Buttons/1": "`Button Y`",
+                "Buttons/2": "`Button B`",
+                "Classic/Buttons/B": "`Classic B`",
+                "Classic/Buttons/X": "`Classic X`",
+                "Classic/Buttons/ZL": "`Classic ZL`",
+                "Classic/Buttons/ZR": "`Classic ZR`",
+                "Classic/Buttons/-": "`Classic -`",
+                "Classic/Buttons/+": "`Classic +`",
+                "Classic/Buttons/Home": "`Classic HOME`",
+                "Classic/Left Stick/Up": "`Classic Left Button Y+`",
+                "Classic/Left Stick/Down": "`Classic Left Button Y-`",
+                "Classic/Left Stick/Left": "`Classic Left X-`",
+                "Classic/Left Stick/Right": "`Classic Left X+`",
+                "Classic/Right Stick/Up": "`Classic Right Button Y+`",
+                "Classic/Right Stick/Down": "`Classic Right Button Y-`",
+                "Classic/Right Stick/Left": "`Classic Right X-`",
+                "Classic/Right Stick/Right": "`Classic Right X+`",
+                "Classic/Triggers/L": "`Classic L`",
+                "Classic/Triggers/R": "`Classic R`",
+                "Classic/D-Pad/Up": "`Classic Up`",
+                "Classic/D-Pad/Down": "`Classic Down`",
+                "Classic/D-Pad/Left": "`Classic Left`",
+                "Classic/D-Pad/Right": "`Classic Right`",
+                "Buttons/Home": "`Button L3`"
+            },
+            "controllerStyleXbox":{
+                "Buttons/A": "`Button A`",
+                "Buttons/B": "`Button X`"
+            }
+        },
+        "romsPath":{
+            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "ISOPath1"
+        },
+        "region": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "FallbackRegion",
+            "options":{
+                "NTSC-J": "0",
+                "NTSC-U": "1",
+                "PAL": "2",
+                "NTSC-K": "3"
+            }
+        },
+        "enableSaveStates": {
+            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "EnableSaveStates",
+            "options": {
+                "true": "True",
+                "false": "False"
+            }
+        },
+        "videoDriver":{
+            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "GFXBackend",
+            "options": {
+                "opengl": "OGL",
+                "vulkan": "Vulkan",
+                "software": "Software Renderer"
+            }
+        }
+        
+    },
+    {
+        "id": 5,
+        "name": "DuckStation",
+        "platform": "PlayStation",
+        "package": "com.github.stenzek.duckstation",
+        "source": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation",
+        "numMaxPlayers": 2,
+        "input": {
+            "file": "/storage/emulated/0/Android/data/com.github.stenzek.duckstation/files/inputprofiles/default_profile.ini",
+            "gamePadSections": ["Pad1", "Pad2", "Pad3", "Pad4"],
+            "mapper": {
+                "Type": "AnalogController",
+                "Up": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis16",
+                "Right": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis15",
+                "Down": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis16",
+                "Left": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis15",
+                "Triangle": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button99",
+                "Circle": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button96",
+                "Cross": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button97",
+                "Square": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button100",
+                "Select": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button109",
+                "Start": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button108",
+                "ForceAnalogOnReset": true,
+                "AnalogDPadInDigitalMode": true,
+                "AnalogDeadzone": 0.0,
+                "AnalogSensitivity": 1.33,
+                "ButtonDeadzone": 0.25,
+                "VibrationBias": 8,
+                "InvertLeftStick": 0,
+                "InvertRightStick": 0,
+                "Macro1Frequency": 0,
+                "Macro2Frequency": 0,
+                "Macro3Frequency": 0,
+                "Macro4Frequency": 0,
+                "LargeMotorScale": 1.0,
+                "SmallMotorScale": 1.0
+            },
+            "controllerStyleXbox":{
+                "Circle": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button97",
+                "Cross": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button96"
+            }
+        }
+    },
+    {
+        "id": 6,
+        "name": "M64Plus FZ",
+        "platform": "Nintendo 64",
+        "package": "org.mupen64plusae.v3.fzurita",
+        "source": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita",
+        "numMaxPlayers": 4,
+        "importProfile": {
+            "filename": "%GAMEPAD_NAME%.cfg",
+            "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
+            "description": "Store the defult profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the dowloaded."
+        }
+    },
+    {
+        "id": 7,
+        "name": "M64Plus FZ Pro",
+        "platform": "Nintendo 64",
+        "package": "org.mupen64plusae.v3.fzurita.pro",
+        "source": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro",
+        "numMaxPlayers": 4,
+        "importProfile": {
+            "filename": "%GAMEPAD_NAME%.cfg",
+            "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
+            "description": "Store the defult profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the dowloaded profile."
+        }
+    },
+    {
+        "id": 8,
+        "name": "MAME4droid",
+        "platform": "Mame",
+        "package": "org.mupen64plusae.v3.fzurita.pro",
+        "source": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro",
+        "numMaxPlayers": 4,
+        "importProfile": {
+            "filename": "%GAMEPAD_NAME%.cfg",
+            "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
+            "description": "Store the defult profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the dowloaded profile."
+        }
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "accept": "Accept",
+    "cancel": "Cancel",
+    "gamepad.title": "Map your controllers",
+    "gamepad.gamepad": "Controller",
+    "gamepad.switch_ab_button": "Swap A/B button positions",
+    "gamepad.switch_ps_button": "Swap buttons for PS",
+    "gamepad_dialog.title": "Pair your controller",
+    "gamepad_dialog.subtitle": "Press a button or move a stick to bind it to ",
+    "gamepad_dialog.unassign": "Unassign"
+}
