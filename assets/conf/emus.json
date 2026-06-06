@@ -3,7 +3,6 @@
         "id": 1,
         "name": "Retro Arch",
         "package": "com.retroarch.aarch64",
-        "source": "https://play.google.com/store/apps/details?id=com.retroarch",
         "numMaxPlayers": 4,
         "input": {
             "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
@@ -132,40 +131,58 @@
                 "menu_unified_controls": "true",
                 "menu_swap_ok_cancel_buttons": "false"
             },
-            "controllerStyleXbox":{
+            "controllerStyleXbox": {
                 "input_player%NUM_PLAYER%_a_btn": "97",
                 "input_player%NUM_PLAYER%_b_btn": "96",
                 "menu_unified_controls": "true",
                 "menu_swap_ok_cancel_buttons": "true"
             }
         },
+        "romsPath": {
+            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+            "key": "rgui_browser_directory"
+        },
         "videoDriver": {
             "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
             "key": "video_driver",
             "options": {
                 "opengl": "gl",
-                "xvideo": "xvideo",
-                "sdl": "sdl",
+                "vulkan": "vulkan",
                 "sdl2": "sdl2",
-                "d3d": "d3d",
-                "vulkan": "vulkan"
+                "d3d": "d3d"
             }
         },
-        "videoScale":{
+        "videoScale": {
             "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
             "key": "aspect_ratio_index",
             "options": {
                 "default": "18",
                 "full": "22"
             }
-        }
+        },
+        "hideOverlay": {
+            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+            "key": "input_overlay_enable",
+            "options": {
+                "show": "true",
+                "hide": "false"
+            }
+        },
+        "enableSaveStates": {
+            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+            "key": "savestate_auto_save",
+            "options": {
+                "enabled": "true",
+                "disabled": "false"
+            }
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=com.retroarch.aarch64"
     },
     {
         "id": 2,
         "name": "PPSSPP",
         "platform": "PSP",
         "package": "org.ppsspp.ppsspp",
-        "source": "https://play.google.com/store/search?q=ppsspp",
         "numMaxPlayers": 1,
         "input": {
             "file": "/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/controls.ini",
@@ -187,44 +204,59 @@
                 "An.Left": "10-4001",
                 "An.Right": "10-4000"
             },
-            "controllerStyleXbox":{
+            "controllerStyleXbox": {
                 "Circle": "10-97",
                 "Cross": "10-96"
             }
         },
-        "romsPath":{
-            "file":"/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
+        "romsPath": {
+            "file": "/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
             "key": "CurrentDirectory"
         },
-        "videoDriver":{
-            "file":"/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
-            "key": "video_driver",
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
+            "key": "GPUBackend",
             "options": {
-                "vulkan": "3 (VULKAN)", 
-                "opengl": "0 (OPENGL)"
+                "opengl": "0",
+                "vulkan": "1"
             }
         },
-        "hiddeOverlay":{
-            "file": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+        "videoScale": {
+            "file": "/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
+            "key": "InternalResolution",
+            "options": {
+                "1x (480p)": "1",
+                "2x (960p)": "2",
+                "3x (1440p)": "3",
+                "4x (1920p)": "4",
+                "5x": "5"
+            }
+        },
+        "hideOverlay": {
+            "file": "/storage/emulated/0/Android/data/org.ppsspp.ppsspp/files/PSP/SYSTEM/ppsspp.ini",
             "key": "ShowTouchControls",
             "options": {
-                "false": "True",
-                "true": "False"
+                "show": "True",
+                "hide": "False"
             }
-        }
-        
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp"
     },
-    {   
+    {
         "id": 3,
         "name": "Dolphin",
         "platform": "GameCube",
         "package": "org.dolphinemu.dolphinemu",
-        "source": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
         "numMaxPlayers": 4,
-        "input":{
+        "input": {
             "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/GCPadNew.ini",
-            "gamePadSections": ["GCPad1", "GCPad2", "GCPad3", "GCPad4"],
-            "mapper":{
+            "gamePadSections": [
+                "GCPad1",
+                "GCPad2",
+                "GCPad3",
+                "GCPad4"
+            ],
+            "mapper": {
                 "Buttons/A": "`Button A`",
                 "Buttons/B": "`Button B`",
                 "Buttons/X": "`Button X`",
@@ -248,19 +280,39 @@
                 "D-Pad/Left": "`Axis 15-`",
                 "D-Pad/Right": "`Axis 15+`"
             },
-            "controllerStyleXbox":{
+            "controllerStyleXbox": {
                 "Buttons/A": "`Button B`",
                 "Buttons/B": "`Button A`"
             }
         },
-        "romsPath":{
-            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+        "romsPath": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
             "key": "ISOPath0"
+        },
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "GFXBackend",
+            "options": {
+                "opengl": "OGL",
+                "vulkan": "Vulkan",
+                "software": "Software Renderer"
+            }
+        },
+        "videoScale": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/GFX.ini",
+            "key": "InternalResolution",
+            "options": {
+                "auto": "0",
+                "1x": "1",
+                "2x": "3",
+                "3x": "5",
+                "4x": "6"
+            }
         },
         "region": {
             "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
             "key": "FallbackRegion",
-            "options":{
+            "options": {
                 "NTSC-J": "0",
                 "NTSC-U": "1",
                 "PAL": "2",
@@ -268,33 +320,29 @@
             }
         },
         "enableSaveStates": {
-            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
             "key": "EnableSaveStates",
             "options": {
-                "true": "True",
-                "false": "False"
+                "enabled": "True",
+                "disabled": "False"
             }
         },
-        "videoDriver":{
-            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
-            "key": "GFXBackend",
-            "options": {
-                "opengl": "OGL",
-                "vulkan": "Vulkan",
-                "software": "Software Renderer"
-            }
-        }
+        "playStore": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu"
     },
-    {   
+    {
         "id": 4,
         "name": "Dolphin",
         "platform": "Wii",
         "package": "org.dolphinemu.dolphinemu",
-        "source": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
         "numMaxPlayers": 4,
-        "input":{
+        "input": {
             "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/WiimoteNew.ini",
-            "gamePadSections": ["Wiimote1", "Wiimote2", "Wiimote3", "Wiimote4"],
+            "gamePadSections": [
+                "Wiimote1",
+                "Wiimote2",
+                "Wiimote3",
+                "Wiimote4"
+            ],
             "mapper": {
                 "Buttons/A": "`Button A`",
                 "Buttons/B": "`Button X`",
@@ -335,19 +383,39 @@
                 "Classic/D-Pad/Right": "`Classic Right`",
                 "Buttons/Home": "`Button L3`"
             },
-            "controllerStyleXbox":{
+            "controllerStyleXbox": {
                 "Buttons/A": "`Button A`",
                 "Buttons/B": "`Button X`"
             }
         },
-        "romsPath":{
-            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+        "romsPath": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
             "key": "ISOPath1"
+        },
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "key": "GFXBackend",
+            "options": {
+                "opengl": "OGL",
+                "vulkan": "Vulkan",
+                "software": "Software Renderer"
+            }
+        },
+        "videoScale": {
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/GFX.ini",
+            "key": "InternalResolution",
+            "options": {
+                "auto": "0",
+                "1x": "1",
+                "2x": "3",
+                "3x": "5",
+                "4x": "6"
+            }
         },
         "region": {
             "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
             "key": "FallbackRegion",
-            "options":{
+            "options": {
                 "NTSC-J": "0",
                 "NTSC-U": "1",
                 "PAL": "2",
@@ -355,34 +423,29 @@
             }
         },
         "enableSaveStates": {
-            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
+            "file": "/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
             "key": "EnableSaveStates",
             "options": {
-                "true": "True",
-                "false": "False"
+                "enabled": "True",
+                "disabled": "False"
             }
         },
-        "videoDriver":{
-            "file":"/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/Dolphin.ini",
-            "key": "GFXBackend",
-            "options": {
-                "opengl": "OGL",
-                "vulkan": "Vulkan",
-                "software": "Software Renderer"
-            }
-        }
-        
+        "playStore": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu"
     },
     {
         "id": 5,
         "name": "DuckStation",
         "platform": "PlayStation",
         "package": "com.github.stenzek.duckstation",
-        "source": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation",
         "numMaxPlayers": 2,
         "input": {
             "file": "/storage/emulated/0/Android/data/com.github.stenzek.duckstation/files/inputprofiles/default_profile.ini",
-            "gamePadSections": ["Pad1", "Pad2", "Pad3", "Pad4"],
+            "gamePadSections": [
+                "Pad1",
+                "Pad2",
+                "Pad3",
+                "Pad4"
+            ],
             "mapper": {
                 "Type": "AnalogController",
                 "Up": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis16",
@@ -410,49 +473,388 @@
                 "LargeMotorScale": 1.0,
                 "SmallMotorScale": 1.0
             },
-            "controllerStyleXbox":{
+            "controllerStyleXbox": {
                 "Circle": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button97",
                 "Cross": "dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button96"
             }
-        }
+        },
+        "romsPath": {
+            "file": "/storage/emulated/0/Android/data/com.github.stenzek.duckstation/files/settings.ini",
+            "key": "Paths"
+        },
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/com.github.stenzek.duckstation/files/settings.ini",
+            "key": "Renderer",
+            "options": {
+                "vulkan": "Vulkan",
+                "opengl": "OpenGL",
+                "software": "Software"
+            }
+        },
+        "videoScale": {
+            "file": "/storage/emulated/0/Android/data/com.github.stenzek.duckstation/files/settings.ini",
+            "key": "ResolutionScale",
+            "options": {
+                "1x": "1",
+                "2x": "2",
+                "3x": "3",
+                "4x": "4",
+                "6x": "6",
+                "8x": "8"
+            }
+        },
+        "region": {
+            "file": "/storage/emulated/0/Android/data/com.github.stenzek.duckstation/files/settings.ini",
+            "key": "ConsoleRegion",
+            "options": {
+                "auto": "Auto",
+                "NTSC-J": "NTSC-J",
+                "NTSC-U/C": "NTSC-U",
+                "PAL": "PAL"
+            }
+        },
+        "enableSaveStates": {
+            "file": "/storage/emulated/0/Android/data/com.github.stenzek.duckstation/files/settings.ini",
+            "key": "SaveStateOnExit",
+            "options": {
+                "enabled": "true",
+                "disabled": "false"
+            }
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation"
     },
     {
         "id": 6,
         "name": "M64Plus FZ",
         "platform": "Nintendo 64",
         "package": "org.mupen64plusae.v3.fzurita",
-        "source": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita",
         "numMaxPlayers": 4,
         "importProfile": {
             "filename": "%GAMEPAD_NAME%.cfg",
             "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
-            "description": "Store the defult profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the dowloaded."
-        }
+            "description": "Store the default profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the downloaded profile."
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita"
     },
     {
         "id": 7,
         "name": "M64Plus FZ Pro",
         "platform": "Nintendo 64",
         "package": "org.mupen64plusae.v3.fzurita.pro",
-        "source": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro",
         "numMaxPlayers": 4,
         "importProfile": {
             "filename": "%GAMEPAD_NAME%.cfg",
             "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
-            "description": "Store the defult profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the dowloaded profile."
-        }
+            "description": "Store the default profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the downloaded profile."
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro"
     },
     {
         "id": 8,
         "name": "MAME4droid",
         "platform": "Mame",
-        "package": "org.mupen64plusae.v3.fzurita.pro",
-        "source": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro",
+        "package": "com.seleuco.mame4droid",
         "numMaxPlayers": 4,
         "importProfile": {
             "filename": "%GAMEPAD_NAME%.cfg",
             "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
-            "description": "Store the defult profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the dowloaded profile."
+            "description": "Store the default profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the downloaded profile."
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=com.seleuco.mame4droid"
+    },
+    {
+        "id": 9,
+        "name": "Flycast",
+        "platform": "Dreamcast",
+        "package": "com.flycast.emulator",
+        "numMaxPlayers": 4,
+        "importProfile": {
+            "filename": "Android_%GAMEPAD_NAME%.cfg",
+            "adbPath": "/storage/emulated/0/Android/data/com.flycast.emulator/files/mappings/Android_%GAMEPAD_NAME%.cfg",
+            "content": "[analog]\nbind0 = 0-:btn_analog_left\nbind1 = 0+:btn_analog_right\nbind2 = 1-:btn_analog_up\nbind3 = 1+:btn_analog_down\nbind4 = 11-:axis2_left\nbind5 = 11+:axis2_right\nbind6 = 14-:axis2_up\nbind7 = 14+:axis2_down\n\n[digital]\nbind0 = 4:btn_escape\nbind1 = 19:btn_dpad1_up\nbind2 = 20:btn_dpad1_down\nbind3 = 21:btn_dpad1_left\nbind4 = 22:btn_dpad1_right\nbind5 = 96:btn_a\nbind6 = 97:btn_b\nbind7 = 99:btn_x\nbind8 = 100:btn_y\nbind9 = 102:btn_trigger2_left\nbind10 = 103:btn_trigger2_right\nbind11 = 104:btn_trigger_left\nbind12 = 105:btn_trigger_right\nbind13 = 108:btn_start\nbind14 = 109:btn_menu\n\n[emulator]\ndead_zone = 10\nmapping_name = Default\nrumble_power = 100\nsaturation = 100\nversion = 3\n",
+            "description": "Writes the gamepad mapping file directly to the device.\nThe file will be named 'Android_<GamepadName>.cfg' in Flycast's mappings folder."
+        },
+        "romsPath": {
+            "file": "/storage/emulated/0/Android/data/com.flycast.emulator/files/emu.cfg",
+            "key": "ContentPath"
+        },
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/com.flycast.emulator/files/emu.cfg",
+            "key": "rend",
+            "options": {
+                "opengl": "0",
+                "vulkan": "3"
+            }
+        },
+        "region": {
+            "file": "/storage/emulated/0/Android/data/com.flycast.emulator/files/emu.cfg",
+            "key": "Region",
+            "options": {
+                "Japan": "0",
+                "USA": "1",
+                "Europe": "2"
+            }
+        },
+        "enableSaveStates": {
+            "file": "/storage/emulated/0/Android/data/com.flycast.emulator/files/emu.cfg",
+            "key": "AutoLoadState",
+            "options": {
+                "enabled": "1",
+                "disabled": "0"
+            }
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=com.flycast.emulator",
+        "github": "flyinghead/flycast"
+    },
+    {
+        "id": 10,
+        "name": "AetherSX2 / NetherSX2",
+        "platform": "PlayStation 2",
+        "package": "com.aethersx2.aethersx2",
+        "numMaxPlayers": 2,
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/com.aethersx2.aethersx2/files/inis/PCSX2.ini",
+            "key": "Renderer",
+            "options": {
+                "vulkan": "14",
+                "opengl": "11",
+                "software": "13"
+            }
+        },
+        "videoScale": {
+            "file": "/storage/emulated/0/Android/data/com.aethersx2.aethersx2/files/inis/PCSX2.ini",
+            "key": "upscale_multiplier",
+            "options": {
+                "1x (native)": "1",
+                "2x": "2",
+                "3x": "3",
+                "4x": "4",
+                "6x": "6",
+                "8x": "8"
+            }
+        },
+        "enableSaveStates": {
+            "file": "/storage/emulated/0/Android/data/com.aethersx2.aethersx2/files/inis/PCSX2.ini",
+            "key": "LoadStateOnBoot",
+            "options": {
+                "enabled": "true",
+                "disabled": "false"
+            }
+        },
+        "importProfile": {
+            "filename": "Default.ini",
+            "adbPath": "/storage/emulated/0/Android/data/com.aethersx2.aethersx2/files/inputprofiles/Default.ini",
+            "content": "[Pad1]\nType = DualShock2\nUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis16\nDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis16\nLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis15\nRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis15\nTriangle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button99\nCircle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button96\nCross = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button97\nSquare = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button100\nSelect = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button109\nStart = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button108\nL1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button102\nR1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button103\nL2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button104\nR2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button105\nL3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button106\nR3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button107\nLLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis0\nLRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis0\nLUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis1\nLDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis1\nRLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis2\nRRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis2\nRUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis3\nRDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis3\n",
+            "description": "Writes the default DualShock2 profile directly to the device.\nThe file is placed in AetherSX2's inputprofiles folder as 'Default.ini'.\nVerify it is selected in Settings > Controllers."
+        },
+        "github": "Trixarian/NetherSX2-classic"
+    },
+    {
+        "id": 11,
+        "name": "PCSX2",
+        "platform": "PlayStation 2",
+        "package": "net.pcsx2.pcsx2",
+        "numMaxPlayers": 2,
+        "videoDriver": {
+            "file": "/storage/emulated/0/Android/data/net.pcsx2.pcsx2/files/inis/PCSX2.ini",
+            "key": "Renderer",
+            "options": {
+                "vulkan": "14",
+                "opengl": "11",
+                "software": "13"
+            }
+        },
+        "videoScale": {
+            "file": "/storage/emulated/0/Android/data/net.pcsx2.pcsx2/files/inis/PCSX2.ini",
+            "key": "upscale_multiplier",
+            "options": {
+                "1x (native)": "1",
+                "2x": "2",
+                "3x": "3",
+                "4x": "4",
+                "6x": "6",
+                "8x": "8"
+            }
+        },
+        "enableSaveStates": {
+            "file": "/storage/emulated/0/Android/data/net.pcsx2.pcsx2/files/inis/PCSX2.ini",
+            "key": "LoadStateOnBoot",
+            "options": {
+                "enabled": "true",
+                "disabled": "false"
+            }
+        },
+        "importProfile": {
+            "filename": "Default.ini",
+            "adbPath": "/storage/emulated/0/Android/data/net.pcsx2.pcsx2/files/inputprofiles/Default.ini",
+            "content": "[Pad1]\nType = DualShock2\nUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis16\nDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis16\nLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis15\nRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis15\nTriangle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button99\nCircle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button96\nCross = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button97\nSquare = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button100\nSelect = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button109\nStart = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button108\nL1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button102\nR1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button103\nL2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button104\nR2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button105\nL3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button106\nR3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button107\nLLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis0\nLRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis0\nLUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis1\nLDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis1\nRLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis2\nRRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis2\nRUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis3\nRDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis3\n",
+            "description": "Writes the default DualShock2 profile directly to the device.\nThe file is placed in PCSX2's inputprofiles folder as 'Default.ini'.\nVerify it is selected in Settings > Controllers."
+        },
+        "playStore": "https://play.google.com/store/apps/details?id=net.pcsx2.pcsx2"
+    },
+    {
+        "id": 12,
+        "name": "mGBA",
+        "platform": "GBA / GB / GBC",
+        "package": "io.mgba.mGBA",
+        "numMaxPlayers": 1,
+        "playStore": "https://play.google.com/store/apps/details?id=io.mgba.mGBA"
+    },
+    {
+        "id": 13,
+        "name": "melonDS",
+        "platform": "Nintendo DS",
+        "package": "me.magnum.melonds",
+        "numMaxPlayers": 1,
+        "playStore": "https://play.google.com/store/apps/details?id=me.magnum.melonds"
+    },
+    {
+        "id": 14,
+        "name": "Azahar",
+        "platform": "Nintendo 3DS",
+        "package": "org.azahar.emulator",
+        "numMaxPlayers": 1,
+        "playStore": "https://play.google.com/store/apps/details?id=org.azahar.emulator",
+        "github": "azahar-emu/azahar"
+    },
+    {
+        "id": 15,
+        "name": "Yaba Sanshiro 2",
+        "platform": "Saturn",
+        "package": "org.devmiyax.yabasanshioro2",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2"
+    },
+    {
+        "id": 16,
+        "name": "MD.emu",
+        "platform": "Mega Drive",
+        "package": "com.explusalpha.MdEmu",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.MdEmu"
+    },
+    {
+        "id": 17,
+        "name": "NES.emu",
+        "platform": "NES",
+        "package": "com.explusalpha.NesEmu",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.NesEmu"
+    },
+    {
+        "id": 18,
+        "name": "Snes9x EX+",
+        "platform": "SNES",
+        "package": "com.explusalpha.Snes9xPlus",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus"
+    },
+    {
+        "id": 19,
+        "name": "Cemu",
+        "platform": "Wii U",
+        "package": "info.cemu.cemu",
+        "numMaxPlayers": 4,
+        "playStore": "https://play.google.com/store/apps/details?id=info.cemu.cemu"
+    },
+    {
+        "id": 20,
+        "name": "RPCS3",
+        "platform": "PlayStation 3",
+        "package": "net.rpcs3.rpcs3",
+        "numMaxPlayers": 4
+    },
+    {
+        "id": 21,
+        "name": "GBA.emu",
+        "platform": "GBA",
+        "package": "com.explusalpha.GbaEmu",
+        "numMaxPlayers": 1,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.GbaEmu"
+    },
+    {
+        "id": 22,
+        "name": "GBC.emu",
+        "platform": "GB / GBC",
+        "package": "com.explusalpha.GbcEmu",
+        "numMaxPlayers": 1,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.GbcEmu"
+    },
+    {
+        "id": 23,
+        "name": "PCE.emu",
+        "platform": "PC Engine",
+        "package": "com.explusalpha.PceEmu",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.PceEmu"
+    },
+    {
+        "id": 24,
+        "name": "NEO.emu",
+        "platform": "Neo Geo",
+        "package": "com.explusalpha.NeoEmu",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu"
+    },
+    {
+        "id": 25,
+        "name": "2600.emu",
+        "platform": "Atari 2600",
+        "package": "com.explusalpha.A2600Emu",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.A2600Emu"
+    },
+    {
+        "id": 26,
+        "name": "C64.emu",
+        "platform": "Commodore 64",
+        "package": "com.explusalpha.C64Emu",
+        "numMaxPlayers": 2,
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu"
+    },
+    {
+        "id": 27,
+        "name": "ScummVM",
+        "platform": "Aventuras gráficas",
+        "package": "org.scummvm.scummvm",
+        "numMaxPlayers": 1,
+        "playStore": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm"
+    },
+    {
+        "id": 28,
+        "name": "Vita3K",
+        "platform": "PS Vita",
+        "package": "org.vita3k.emulator",
+        "numMaxPlayers": 1,
+        "github": "Vita3K/Vita3K-Android"
+    },
+    {
+        "id": 29,
+        "name": "PPSSPP Gold",
+        "platform": "PSP",
+        "package": "org.ppsspp.ppssppgold",
+        "numMaxPlayers": 1,
+        "playStore": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold"
+    },
+    {
+        "id": 30,
+        "name": "Lime3DS",
+        "platform": "Nintendo 3DS",
+        "package": "org.lime3ds.emulator",
+        "numMaxPlayers": 1,
+        "deprecated": true,
+        "successor": {
+            "name": "Azahar",
+            "playStore": "https://play.google.com/store/apps/details?id=org.azahar.emulator",
+            "github": "azahar-emu/azahar"
         }
+    },
+    {
+        "id": 31,
+        "name": "Redream",
+        "platform": "Dreamcast",
+        "package": "io.recompiled.redream",
+        "numMaxPlayers": 2,
+        "playStore": "https://redream.io/download"
     }
 ]
