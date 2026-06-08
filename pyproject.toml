@@ -1,0 +1,20 @@
+[project]
+name = "emu-config"
+version = "1.0.0"
+description = "Auto configure android emulators"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flet>=0.85.2",
+]
+
+[tool.flet]
+product = "Emu Config"
+icon = "assets/icons/mipmap-xxxhdpi/ic_launcher.png"
+
+[tool.flet.android]
+icon = "assets/icons/mipmap-xxxhdpi/ic_launcher.png"
+
+[tool.flet.android.permission]
+"android.permission.QUERY_ALL_PACKAGES" = true
+"android.permission.MANAGE_EXTERNAL_STORAGE" = true
