@@ -1,0 +1,357 @@
+{
+  "launchers": [
+    {
+      "id": "daijisho",
+      "name": "Daijisho",
+      "package": "com.magneticchen.daijishou",
+      "image": "Daijisho.png",
+      "playStore": "https://play.google.com/store/apps/details?id=com.magneticchen.daijishou"
+    },
+    {
+      "id": "esde",
+      "name": "ES-DE",
+      "package": "org.es_de.frontend",
+      "image": "es_de.png",
+      "playStore": "https://play.google.com/store/apps/details?id=org.es_de.frontend"
+    },
+    {
+      "id": "pegasus",
+      "name": "Pegasus Frontend",
+      "package": "org.pegasus_frontend.android",
+      "image": "pegasus.png",
+      "github": "mmatyas/pegasus-frontend"
+    }
+  ],
+  "platforms": [
+    {
+      "platformName": "PlayStation Portable",
+      "uniqueId": "psp",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cso|iso|pbp|prx|elf|zip|7z)$",
+      "extensions": "cso, iso, pbp, prx, elf",
+      "players": [
+        {
+          "name": "PPSSPP",
+          "package": "org.ppsspp.ppsspp",
+          "amStartArguments": "-n org.ppsspp.ppsspp/org.ppsspp.ppsspp.PpssppActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        },
+        {
+          "name": "PPSSPP Gold",
+          "package": "org.ppsspp.ppssppgold",
+          "amStartArguments": "-n org.ppsspp.ppssppgold/org.ppsspp.ppssppgold.PpssppActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "GameCube",
+      "uniqueId": "gamecube",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gcm|iso|tgc|gcz|wbfs|dol|ciso|rvz|nkit\\.iso)$",
+      "extensions": "gcm, iso, gcz, wbfs, dol, ciso, rvz",
+      "players": [
+        {
+          "name": "Dolphin",
+          "package": "org.dolphinemu.dolphinemu",
+          "amStartArguments": "-n org.dolphinemu.dolphinemu/org.dolphinemu.dolphinemu.activities.EmulationActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Wii",
+      "uniqueId": "wii",
+      "acceptedFilenameRegex": "^(.*)\\.(?:wbfs|iso|gcz|ciso|rvz|dol|nkit\\.iso)$",
+      "extensions": "wbfs, iso, gcz, ciso, rvz, dol",
+      "players": [
+        {
+          "name": "Dolphin",
+          "package": "org.dolphinemu.dolphinemu",
+          "amStartArguments": "-n org.dolphinemu.dolphinemu/org.dolphinemu.dolphinemu.activities.EmulationActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "PlayStation",
+      "uniqueId": "psx",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cue|img|iso|chd|pbp|ecm|mds|psxexe|ps-exe)$",
+      "extensions": "bin, cue, img, iso, chd, pbp, ecm, mds",
+      "players": [
+        {
+          "name": "DuckStation",
+          "package": "com.github.stenzek.duckstation",
+          "amStartArguments": "-n com.github.stenzek.duckstation/com.github.stenzek.duckstation.MainActivity\n-a android.intent.action.VIEW\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "PlayStation 2",
+      "uniqueId": "ps2",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cue|iso|chd|cso|ciso|gz|mdf)$",
+      "extensions": "bin, cue, iso, chd, cso, ciso, gz, mdf",
+      "players": [
+        {
+          "name": "AetherSX2 / NetherSX2",
+          "package": "com.aethersx2.aethersx2",
+          "amStartArguments": "-n com.aethersx2.aethersx2/xyz.aethersx2.android.GameActivity\n-a android.intent.action.VIEW\n-d {file.uri}",
+          "killPackageProcesses": false
+        },
+        {
+          "name": "PCSX2",
+          "package": "net.pcsx2.pcsx2",
+          "amStartArguments": "-n net.pcsx2.pcsx2/net.pcsx2.pcsx2.NativeActivity\n-a android.intent.action.VIEW\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Nintendo 64",
+      "uniqueId": "n64",
+      "acceptedFilenameRegex": "^(.*)\\.(?:n64|v64|z64|ndd|zip|7z)$",
+      "extensions": "n64, v64, z64, ndd, zip, 7z",
+      "players": [
+        {
+          "name": "M64Plus FZ",
+          "package": "org.mupen64plusae.v3.fzurita",
+          "amStartArguments": "-n org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        },
+        {
+          "name": "M64Plus FZ Pro",
+          "package": "org.mupen64plusae.v3.fzurita.pro",
+          "amStartArguments": "-n org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Arcade",
+      "uniqueId": "arcade",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|7z)$",
+      "extensions": "zip, 7z",
+      "players": [
+        {
+          "name": "MAME4droid",
+          "package": "com.seleuco.mame4droid",
+          "amStartArguments": "-n com.seleuco.mame4droid/com.seleuco.mame4droid.Mame4droid\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Dreamcast",
+      "uniqueId": "dreamcast",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gdi|chd|cdi|iso|cue|zip|7z)$",
+      "extensions": "gdi, chd, cdi, iso, cue",
+      "players": [
+        {
+          "name": "Flycast",
+          "package": "com.flycast.emulator",
+          "amStartArguments": "-n com.flycast.emulator/com.flycast.emulator.emu.MainActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        },
+        {
+          "name": "Redream",
+          "package": "io.recompiled.redream",
+          "amStartArguments": "-n io.recompiled.redream/io.recompiled.redream.MainActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Game Boy Advance",
+      "uniqueId": "gba",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gba|zip|7z)$",
+      "extensions": "gba, zip, 7z",
+      "players": [
+        {
+          "name": "GBA.emu",
+          "package": "com.explusalpha.GbaEmu",
+          "amStartArguments": "-n com.explusalpha.GbaEmu/com.explusalpha.GbaEmu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        },
+        {
+          "name": "mGBA",
+          "package": "io.mgba.mGBA",
+          "amStartArguments": "-n io.mgba.mGBA/io.mgba.mGBA.MGBAActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Game Boy / Color",
+      "uniqueId": "gb",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$",
+      "extensions": "gb, gbc, zip, 7z",
+      "players": [
+        {
+          "name": "GBC.emu",
+          "package": "com.explusalpha.GbcEmu",
+          "amStartArguments": "-n com.explusalpha.GbcEmu/com.explusalpha.GbcEmu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        },
+        {
+          "name": "mGBA",
+          "package": "io.mgba.mGBA",
+          "amStartArguments": "-n io.mgba.mGBA/io.mgba.mGBA.MGBAActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Nintendo DS",
+      "uniqueId": "nds",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|ids|zip|7z)$",
+      "extensions": "nds, ids, zip, 7z",
+      "players": [
+        {
+          "name": "melonDS",
+          "package": "me.magnum.melonds",
+          "amStartArguments": "-n me.magnum.melonds/me.magnum.melonds.ui.MainActivity\n-a android.intent.action.VIEW\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Nintendo 3DS",
+      "uniqueId": "3ds",
+      "acceptedFilenameRegex": "^(.*)\\.(?:3ds|cia|app|cci|cxi|zip|7z)$",
+      "extensions": "3ds, cia, app, cci, cxi",
+      "players": [
+        {
+          "name": "Azahar",
+          "package": "org.azahar.emulator",
+          "amStartArguments": "-n org.azahar.emulator/org.azahar.emulator.activities.EmulationActivity\n-a android.intent.action.VIEW\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Sega Saturn",
+      "uniqueId": "saturn",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|iso|mds|zip)$",
+      "extensions": "ccd, chd, cue, iso, mds",
+      "players": [
+        {
+          "name": "Yaba Sanshiro 2",
+          "package": "org.devmiyax.yabasanshioro2",
+          "amStartArguments": "-n org.devmiyax.yabasanshioro2/org.devmiyax.yabasanshioro2.SplashActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Mega Drive",
+      "uniqueId": "megadrive",
+      "acceptedFilenameRegex": "^(.*)\\.(?:md|smd|gen|bin|zip|7z)$",
+      "extensions": "md, smd, gen, bin, zip, 7z",
+      "players": [
+        {
+          "name": "MD.emu",
+          "package": "com.explusalpha.MdEmu",
+          "amStartArguments": "-n com.explusalpha.MdEmu/com.explusalpha.MdEmu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "NES / Famicom",
+      "uniqueId": "nes",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nes|fds|nsf|zip|7z)$",
+      "extensions": "nes, fds, nsf, zip, 7z",
+      "players": [
+        {
+          "name": "NES.emu",
+          "package": "com.explusalpha.NesEmu",
+          "amStartArguments": "-n com.explusalpha.NesEmu/com.explusalpha.NesEmu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "SNES / Super Famicom",
+      "uniqueId": "snes",
+      "acceptedFilenameRegex": "^(.*)\\.(?:smc|sfc|bin|zip|7z)$",
+      "extensions": "smc, sfc, bin, zip, 7z",
+      "players": [
+        {
+          "name": "Snes9x EX+",
+          "package": "com.explusalpha.Snes9xPlus",
+          "amStartArguments": "-n com.explusalpha.Snes9xPlus/com.explusalpha.Snes9xPlus.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Wii U",
+      "uniqueId": "wiiu",
+      "acceptedFilenameRegex": "^(.*)\\.(?:wud|wux|wua|iso)$",
+      "extensions": "wud, wux, wua, iso",
+      "players": [
+        {
+          "name": "Cemu",
+          "package": "info.cemu.cemu",
+          "amStartArguments": "-n info.cemu.cemu/info.cemu.cemu.MainActivity\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "PC Engine / TurboGrafx-16",
+      "uniqueId": "pcengine",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pce|cue|ccd|zip|7z)$",
+      "extensions": "pce, cue, ccd, zip, 7z",
+      "players": [
+        {
+          "name": "PCE.emu",
+          "package": "com.explusalpha.PceEmu",
+          "amStartArguments": "-n com.explusalpha.PceEmu/com.explusalpha.PceEmu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Neo Geo",
+      "uniqueId": "neogeo",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|7z)$",
+      "extensions": "zip, 7z",
+      "players": [
+        {
+          "name": "NEO.emu",
+          "package": "com.explusalpha.NeoEmu",
+          "amStartArguments": "-n com.explusalpha.NeoEmu/com.explusalpha.NeoEmu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Atari 2600",
+      "uniqueId": "atari2600",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$",
+      "extensions": "a26, bin, zip, 7z",
+      "players": [
+        {
+          "name": "2600.emu",
+          "package": "com.explusalpha.A2600Emu",
+          "amStartArguments": "-n com.explusalpha.A2600Emu/com.explusalpha.A2600Emu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    },
+    {
+      "platformName": "Commodore 64",
+      "uniqueId": "c64",
+      "acceptedFilenameRegex": "^(.*)\\.(?:d64|t64|prg|crt|tap|zip|7z)$",
+      "extensions": "d64, t64, prg, crt, tap, zip, 7z",
+      "players": [
+        {
+          "name": "C64.emu",
+          "package": "com.explusalpha.C64Emu",
+          "amStartArguments": "-n com.explusalpha.C64Emu/com.explusalpha.C64Emu.Main\n-d {file.uri}",
+          "killPackageProcesses": false
+        }
+      ]
+    }
+  ]
+}

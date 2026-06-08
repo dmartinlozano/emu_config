@@ -2,6 +2,7 @@ import flet as ft
 from src.controllers.emu_controller import EmuController
 from src.controllers.gamepad_controller import GamepadController
 from src.models.gamepad import Gamepad
+from src.services.i18n_service import I18n
 from src.views.widgets.gamepad_config_page import GamepadConfigPage
 
 
@@ -29,33 +30,41 @@ class GamepadsView:
         self._list.controls = [self._build_row(i, gp) for i, gp in enumerate(self._controller.gamepads)]
 
     def _build_row(self, index: int, gp: Gamepad) -> ft.Control:
-        return ft.Column(
-            controls=[
-                ft.ListTile(
-                    leading=ft.Container(
-                        content=ft.Text(f"P{gp.num_player}", weight=ft.FontWeight.BOLD),
-                        width=32,
+        leading = ft.Container(
+            width=40,
+            height=40,
+            border_radius=20,
+            bgcolor=ft.Colors.BLUE_700,
+            content=ft.Text(
+                f"P{gp.num_player}",
+                size=13,
+                weight=ft.FontWeight.BOLD,
+                color=ft.Colors.WHITE,
+            ),
+            alignment=ft.Alignment(0, 0),
+        )
+        tile = ft.ListTile(
+            leading=leading,
+            title=ft.Text(gp.name),
+            subtitle=ft.Text(gp.descriptor or "", size=11, color=ft.Colors.GREY_600),
+            trailing=ft.Row(
+                controls=[
+                    ft.IconButton(
+                        ft.Icons.DELETE_OUTLINE,
+                        icon_color=ft.Colors.RED_400,
+                        tooltip=I18n.t("gamepad.remove"),
+                        on_click=lambda _, gid=gp.id: self._delete(gid),
                     ),
-                    title=ft.Text(gp.name),
-                    subtitle=ft.Text(gp.descriptor or "", size=11, color=ft.Colors.GREY_600),
-                    trailing=ft.Row(
-                        controls=[
-                            ft.Icon(ft.Icons.DRAG_HANDLE, color=ft.Colors.GREY_400),
-                            ft.IconButton(
-                                ft.Icons.DELETE_OUTLINE,
-                                icon_color=ft.Colors.RED_400,
-                                tooltip="Remove",
-                                on_click=lambda _, gid=gp.id: self._delete(gid),
-                            ),
-                        ],
-                        tight=True,
-                    ),
-                    on_click=lambda _, gp=gp: self._open_config(gp),
-                    tooltip="Tap to configure buttons",
-                ),
-                ft.Divider(height=1),
-            ],
-            spacing=0,
+                ],
+                tight=True,
+            ),
+            on_click=lambda _, gp=gp: self._open_config(gp),
+            tooltip=I18n.t("gamepad.configure_hint"),
+        )
+        return ft.Card(
+            content=tile,
+            elevation=2,
+            margin=ft.Margin(left=8, right=8, top=1, bottom=1),
         )
 
     def _open_config(self, gp: Gamepad):

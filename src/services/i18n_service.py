@@ -1,18 +1,20 @@
 import json
 import locale
+import os
 from pathlib import Path
 
 
 class I18n:
     _I18N_DIR = Path("assets/i18n")
     _supported = {"en", "es"}
+    _lang_names = {"en": "English", "es": "Español"}
     _strings: dict[str, str] = {}
     _lang: str = "en"
 
     @classmethod
     def load(cls, lang: str | None = None):
         if not lang:
-            system_lang = locale.getdefaultlocale()[0] or "en"
+            system_lang = locale.getdefaultlocale()[0] or os.environ.get("LANG", "en")
             lang = system_lang[:2]
         if lang not in cls._supported:
             lang = "en"
@@ -25,5 +27,12 @@ class I18n:
         return cls._lang
 
     @classmethod
-    def t(cls, key: str, fallback: str = "") -> str:
-        return cls._strings.get(key, fallback or key)
+    def available_langs(cls) -> dict[str, str]:
+        return {code: cls._lang_names.get(code, code) for code in sorted(cls._supported)}
+
+    @classmethod
+    def t(cls, key: str, fallback: str = "", **kwargs) -> str:
+        text = cls._strings.get(key, fallback or key)
+        if kwargs:
+            text = text.format(**kwargs)
+        return text

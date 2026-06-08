@@ -29,18 +29,68 @@ def _apply_profile(mapper: dict, profile: dict[str, int]) -> dict:
 
 
 class EmuService:
-    _EMUS_JSON = Path("assets/conf/emus.json")
+    _DEFAULT_JSON = Path("assets/conf/emus.json")
 
     def __init__(self):
         self._adb = AdbService()
         self._prefs = PreferencesService()
 
+    def _emus_json(self) -> Path:
+        profile_id = PreferencesService.get_active_profile()
+        profile_path = Path(f"assets/conf/profiles/{profile_id}/emus.json")
+        return profile_path if profile_path.exists() else self._DEFAULT_JSON
+
     def load_emus(self) -> list[Emu]:
-        data = json.loads(self._EMUS_JSON.read_text(encoding="utf-8"))
+        data = json.loads(self._emus_json().read_text(encoding="utf-8"))
         return [Emu.from_dict(item) for item in data]
 
     def get_installed_packages(self) -> set[str]:
-        return self._adb.get_installed_packages()
+        # pm list packages works on desktop (ADB) and on Android < 11 or with QUERY_ALL_PACKAGES
+        packages = self._adb.get_installed_packages()
+        if packages:
+            return packages
+        # Android 11+ visibility restriction: fall back to per-emulator detection
+        return self._detect_installed_by_path()
+
+    def _detect_installed_by_path(self) -> set[str]:
+        """
+        Detect installed packages without pm list packages.
+        Primary: check if the app's external data directory exists (created on first run).
+        Fallback: pm path per package (works for packages never run yet).
+        Covers both emulators and launchers.
+        """
+        all_packages = self._all_known_packages()
+        installed: set[str] = set()
+        for pkg in all_packages:
+            if self._data_dir_exists(pkg):
+                installed.add(pkg)
+            elif self._adb.is_package_installed(pkg):
+                installed.add(pkg)
+        return installed
+
+    def _all_known_packages(self) -> set[str]:
+        packages: set[str] = set()
+        for emu in self.load_emus():
+            if not emu.deprecated:
+                packages.add(emu.package)
+        launchers_path = Path("assets/conf/launchers.json")
+        if launchers_path.exists():
+            data = json.loads(launchers_path.read_text(encoding="utf-8"))
+            for launcher in data.get("launchers", []):
+                if pkg := launcher.get("package"):
+                    packages.add(pkg)
+            for platform in data.get("platforms", []):
+                for player in platform.get("players", []):
+                    if pkg := player.get("package"):
+                        packages.add(pkg)
+        return packages
+
+    @staticmethod
+    def _data_dir_exists(package: str) -> bool:
+        for base in ("/storage/emulated/0/Android/data", "/sdcard/Android/data"):
+            if Path(f"{base}/{package}").exists():
+                return True
+        return False
 
     def get_package_version(self, package: str) -> str | None:
         return self._adb.get_package_version(package)

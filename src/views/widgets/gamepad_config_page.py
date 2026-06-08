@@ -7,6 +7,7 @@ from src.config.button_profile import DEFAULT_PROFILE, FLET_KEY_TO_ANDROID, SEMA
 from src.controllers.emu_controller import EmuController
 from src.controllers.gamepad_controller import GamepadController
 from src.models.gamepad import Gamepad
+from src.services.i18n_service import I18n
 
 _TIMEOUT = 10.0
 _ROUTE = "/gamepad_config"
@@ -55,12 +56,12 @@ class GamepadConfigPage:
                         spacing=10,
                         controls=[
                             ft.ElevatedButton(
-                                "Detectar todos",
+                                I18n.t("gamepad_dialog.detect_all"),
                                 on_click=self._on_detect_all,
                                 icon=ft.Icons.GAMEPAD,
                             ),
                             ft.Text(
-                                "O pulsa un botón de la lista para asignarlo individualmente.",
+                                I18n.t("gamepad_dialog.detect_hint"),
                                 size=12,
                                 color=ft.Colors.GREY_600,
                             ),
@@ -109,14 +110,14 @@ class GamepadConfigPage:
 
     async def _detect_one(self, sem: str) -> int | None:
         label = next(lbl for s, lbl in SEMANTIC_BUTTONS if s == sem)
-        self._status.value = f"Pulsa  {label}…"
+        self._status.value = I18n.t("gamepad_dialog.detecting", label=label)
         self._status.update()
 
         if _is_android():
             code = await self._detect_via_keyboard(sem)
         else:
             if not self._gamepad.device_path:
-                self._status.value = "Sin ruta de dispositivo — reconecta y refresca."
+                self._status.value = I18n.t("gamepad_dialog.no_device")
                 self._status.update()
                 return None
             code = await self._ctrl.detect_button_press(self._gamepad.device_path, _TIMEOUT)
@@ -124,10 +125,10 @@ class GamepadConfigPage:
         if code is not None:
             self._detected[sem] = code
             self._update_row(sem, code)
-            self._status.value = f"✓  {label}  →  {code}"
+            self._status.value = I18n.t("gamepad_dialog.detected", label=label, code=code)
             self._autosave()
         else:
-            self._status.value = f"No detectado — {label}."
+            self._status.value = I18n.t("gamepad_dialog.not_detected", label=label)
         self._status.update()
         return code
 
@@ -152,15 +153,12 @@ class GamepadConfigPage:
         finally:
             self._page.on_keyboard_event = self._absorb_nav_keys
 
-        # If Flutter gave us a recognisable label, use its mapped keycode.
         if key in FLET_KEY_TO_ANDROID:
             return FLET_KEY_TO_ANDROID[key]
 
-        # Empty label = gamepad face/shoulder button (Flutter limitation).
-        # Fall back to the standard code for this semantic button.
         fallback = DEFAULT_PROFILE.get(sem)
         if fallback is not None:
-            self._status.value = f"Botón pulsado → código estándar {fallback}"
+            self._status.value = I18n.t("gamepad_dialog.standard_code", code=fallback)
             self._status.update()
             await asyncio.sleep(0.6)
             return fallback
@@ -173,7 +171,7 @@ class GamepadConfigPage:
                 break
             await self._detect_one(sem)
             await asyncio.sleep(0.3)
-        self._status.value = "Detección completa."
+        self._status.value = I18n.t("gamepad_dialog.detection_complete")
         self._status.update()
 
     def _autosave(self):

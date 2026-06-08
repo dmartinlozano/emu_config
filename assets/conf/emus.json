@@ -176,7 +176,8 @@
                 "disabled": "false"
             }
         },
-        "playStore": "https://play.google.com/store/apps/details?id=com.retroarch.aarch64"
+        "playStore": "https://play.google.com/store/apps/details?id=com.retroarch.aarch64",
+        "image": "retro_arch.png"
     },
     {
         "id": 2,
@@ -240,7 +241,8 @@
                 "hide": "False"
             }
         },
-        "playStore": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp"
+        "playStore": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp",
+        "image": "ppsspp.jpg"
     },
     {
         "id": 3,
@@ -327,7 +329,8 @@
                 "disabled": "False"
             }
         },
-        "playStore": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu"
+        "playStore": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
+        "image": "dolphin.png"
     },
     {
         "id": 4,
@@ -430,7 +433,8 @@
                 "disabled": "False"
             }
         },
-        "playStore": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu"
+        "playStore": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
+        "image": "dolphin.png"
     },
     {
         "id": 5,
@@ -521,7 +525,8 @@
                 "disabled": "false"
             }
         },
-        "playStore": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation"
+        "playStore": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation",
+        "image": "duckstation.png"
     },
     {
         "id": 6,
@@ -534,7 +539,8 @@
             "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
             "description": "Store the default profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the downloaded profile."
         },
-        "playStore": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita"
+        "playStore": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita",
+        "image": "M64Plus.png"
     },
     {
         "id": 7,
@@ -547,7 +553,8 @@
             "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
             "description": "Store the default profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the downloaded profile."
         },
-        "playStore": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro"
+        "playStore": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro",
+        "image": "M64Plus.png"
     },
     {
         "id": 8,
@@ -560,7 +567,8 @@
             "content": "[%GAMEPAD_NAME%]\ncomment=gamepad\nmap=11:-34,10:-33,9:-32,8:-31,3:-30,2:-29,1:-24,0:-23,19:-4,18:-3,17:-2,16:-1,7:96,6:97,5:99,4:100,13:102,12:103,\n",
             "description": "Store the default profile.\nSelect Menu/Tools/Import Data/Import cheats and Profiles.\nSelect the downloaded profile."
         },
-        "playStore": "https://play.google.com/store/apps/details?id=com.seleuco.mame4droid"
+        "playStore": "https://play.google.com/store/apps/details?id=com.seleuco.mame4droid",
+        "image": "mame.png"
     },
     {
         "id": 9,
@@ -604,6 +612,7 @@
             }
         },
         "playStore": "https://play.google.com/store/apps/details?id=com.flycast.emulator",
+        "image": "flycast.png",
         "github": "flyinghead/flycast"
     },
     {
@@ -647,7 +656,8 @@
             "content": "[Pad1]\nType = DualShock2\nUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis16\nDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis16\nLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis15\nRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis15\nTriangle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button99\nCircle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button96\nCross = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button97\nSquare = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button100\nSelect = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button109\nStart = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button108\nL1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button102\nR1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button103\nL2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button104\nR2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button105\nL3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button106\nR3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button107\nLLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis0\nLRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis0\nLUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis1\nLDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis1\nRLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis2\nRRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis2\nRUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis3\nRDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis3\n",
             "description": "Writes the default DualShock2 profile directly to the device.\nThe file is placed in AetherSX2's inputprofiles folder as 'Default.ini'.\nVerify it is selected in Settings > Controllers."
         },
-        "github": "Trixarian/NetherSX2-classic"
+        "github": "Trixarian/NetherSX2-classic",
+        "image": "nether.jpg"
     },
     {
         "id": 11,
@@ -690,7 +700,8 @@
             "content": "[Pad1]\nType = DualShock2\nUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis16\nDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis16\nLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis15\nRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis15\nTriangle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button99\nCircle = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button96\nCross = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button97\nSquare = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button100\nSelect = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button109\nStart = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button108\nL1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button102\nR1 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button103\nL2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button104\nR2 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button105\nL3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button106\nR3 = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/Button107\nLLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis0\nLRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis0\nLUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis1\nLDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis1\nRLeft = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis2\nRRight = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis2\nRUp = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/-Axis3\nRDown = dc75afea56e3c3a269b97967aa26b8c93c0bd3fb/+Axis3\n",
             "description": "Writes the default DualShock2 profile directly to the device.\nThe file is placed in PCSX2's inputprofiles folder as 'Default.ini'.\nVerify it is selected in Settings > Controllers."
         },
-        "playStore": "https://play.google.com/store/apps/details?id=net.pcsx2.pcsx2"
+        "playStore": "https://play.google.com/store/apps/details?id=net.pcsx2.pcsx2",
+        "image": "pcsx2.jpg"
     },
     {
         "id": 12,
@@ -698,7 +709,8 @@
         "platform": "GBA / GB / GBC",
         "package": "io.mgba.mGBA",
         "numMaxPlayers": 1,
-        "playStore": "https://play.google.com/store/apps/details?id=io.mgba.mGBA"
+        "playStore": "https://play.google.com/store/apps/details?id=io.mgba.mGBA",
+        "image": "mgba.png"
     },
     {
         "id": 13,
@@ -706,7 +718,8 @@
         "platform": "Nintendo DS",
         "package": "me.magnum.melonds",
         "numMaxPlayers": 1,
-        "playStore": "https://play.google.com/store/apps/details?id=me.magnum.melonds"
+        "playStore": "https://play.google.com/store/apps/details?id=me.magnum.melonds",
+        "image": "melonds.png"
     },
     {
         "id": 14,
@@ -715,6 +728,7 @@
         "package": "org.azahar.emulator",
         "numMaxPlayers": 1,
         "playStore": "https://play.google.com/store/apps/details?id=org.azahar.emulator",
+        "image": "azahar.jpg",
         "github": "azahar-emu/azahar"
     },
     {
@@ -723,7 +737,8 @@
         "platform": "Saturn",
         "package": "org.devmiyax.yabasanshioro2",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2"
+        "playStore": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2",
+        "image": "yaba.jpg"
     },
     {
         "id": 16,
@@ -731,7 +746,8 @@
         "platform": "Mega Drive",
         "package": "com.explusalpha.MdEmu",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.MdEmu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.MdEmu",
+        "image": "mdemu.png"
     },
     {
         "id": 17,
@@ -739,7 +755,8 @@
         "platform": "NES",
         "package": "com.explusalpha.NesEmu",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.NesEmu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.NesEmu",
+        "image": "nes_emu.png"
     },
     {
         "id": 18,
@@ -747,7 +764,8 @@
         "platform": "SNES",
         "package": "com.explusalpha.Snes9xPlus",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus",
+        "image": "Snes9x_ex.jpeg"
     },
     {
         "id": 19,
@@ -755,14 +773,16 @@
         "platform": "Wii U",
         "package": "info.cemu.cemu",
         "numMaxPlayers": 4,
-        "playStore": "https://play.google.com/store/apps/details?id=info.cemu.cemu"
+        "playStore": "https://play.google.com/store/apps/details?id=info.cemu.cemu",
+        "image": "cemu.png"
     },
     {
         "id": 20,
         "name": "RPCS3",
         "platform": "PlayStation 3",
         "package": "net.rpcs3.rpcs3",
-        "numMaxPlayers": 4
+        "numMaxPlayers": 4,
+        "image": "RPCS3.jpeg"
     },
     {
         "id": 21,
@@ -770,7 +790,8 @@
         "platform": "GBA",
         "package": "com.explusalpha.GbaEmu",
         "numMaxPlayers": 1,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.GbaEmu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.GbaEmu",
+        "image": "gba_emu.png"
     },
     {
         "id": 22,
@@ -778,7 +799,8 @@
         "platform": "GB / GBC",
         "package": "com.explusalpha.GbcEmu",
         "numMaxPlayers": 1,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.GbcEmu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.GbcEmu",
+        "image": "gbc_emu.png"
     },
     {
         "id": 23,
@@ -786,7 +808,8 @@
         "platform": "PC Engine",
         "package": "com.explusalpha.PceEmu",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.PceEmu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.PceEmu",
+        "image": "pce_emu.png"
     },
     {
         "id": 24,
@@ -794,7 +817,8 @@
         "platform": "Neo Geo",
         "package": "com.explusalpha.NeoEmu",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu",
+        "image": "neo_emu.png"
     },
     {
         "id": 25,
@@ -802,7 +826,8 @@
         "platform": "Atari 2600",
         "package": "com.explusalpha.A2600Emu",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.A2600Emu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.A2600Emu",
+        "image": "2600_emu.webp"
     },
     {
         "id": 26,
@@ -810,7 +835,8 @@
         "platform": "Commodore 64",
         "package": "com.explusalpha.C64Emu",
         "numMaxPlayers": 2,
-        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu"
+        "playStore": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu",
+        "image": "c64_emu.png"
     },
     {
         "id": 27,
@@ -818,7 +844,8 @@
         "platform": "Aventuras gráficas",
         "package": "org.scummvm.scummvm",
         "numMaxPlayers": 1,
-        "playStore": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm"
+        "playStore": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm",
+        "image": "ScummVM.jpg"
     },
     {
         "id": 28,
@@ -826,7 +853,8 @@
         "platform": "PS Vita",
         "package": "org.vita3k.emulator",
         "numMaxPlayers": 1,
-        "github": "Vita3K/Vita3K-Android"
+        "github": "Vita3K/Vita3K-Android",
+        "image": "vita3k.png"
     },
     {
         "id": 29,
@@ -834,7 +862,8 @@
         "platform": "PSP",
         "package": "org.ppsspp.ppssppgold",
         "numMaxPlayers": 1,
-        "playStore": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold"
+        "playStore": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold",
+        "image": "ppsp_gold.png"
     },
     {
         "id": 30,
@@ -847,7 +876,8 @@
             "name": "Azahar",
             "playStore": "https://play.google.com/store/apps/details?id=org.azahar.emulator",
             "github": "azahar-emu/azahar"
-        }
+        },
+        "image": "lime3ds.png"
     },
     {
         "id": 31,
@@ -855,6 +885,7 @@
         "platform": "Dreamcast",
         "package": "io.recompiled.redream",
         "numMaxPlayers": 2,
-        "playStore": "https://redream.io/download"
+        "playStore": "https://redream.io/download",
+        "image": "reddream.png"
     }
 ]

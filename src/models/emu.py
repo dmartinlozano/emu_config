@@ -74,6 +74,7 @@ class Emu:
     platform: Optional[str] = None
     play_store: Optional[str] = None
     github: Optional[str] = None
+    image: Optional[str] = None
     deprecated: bool = False
     successor: Optional[Successor] = None
     input: Optional[Input] = None
@@ -105,6 +106,7 @@ class Emu:
             platform=data.get("platform"),
             play_store=data.get("playStore"),
             github=data.get("github"),
+            image=data.get("image"),
             deprecated=data.get("deprecated", False),
             successor=successor,
             input=Input(

@@ -19,4 +19,4 @@ def main(page: ft.Page):
         page.update()
 
 
-ft.run(main)
+ft.run(main, assets_dir="assets")
